@@ -1,1 +1,12 @@
 <app-title-animation></app-title-animation>
+
+<div class="app-container">
+  <div class="card-container">
+    @for (todo of todos; track $index) {
+      <app-uwu-card
+        [todo]="todo"
+        (doneToggle)="toggleDone($index)"
+      ></app-uwu-card>
+    }
+  </div>
+</div>

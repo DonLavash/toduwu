@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TitleAnimationComponent } from './title-animation/title-animation.component';
+import { UwuCardComponent } from './uwu-card/uwu-card.component';
 
 export interface ToDo {
   title: string;
@@ -8,7 +9,7 @@ export interface ToDo {
 
 @Component({
   selector: 'app-root',
-  imports: [TitleAnimationComponent],
+  imports: [TitleAnimationComponent, UwuCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
