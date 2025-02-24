@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TitleAnimationComponent } from './title-animation/title-animation.component';
 
 export interface ToDo {
   title: string;
