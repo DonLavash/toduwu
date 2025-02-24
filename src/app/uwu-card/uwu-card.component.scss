@@ -1,0 +1,38 @@
+.card {
+  display: block;
+  padding: 1rem;
+
+  border-radius: 8px;
+  background-color: #f5e1e0;
+  transition: background-color 0.1s linear;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f4ddd4;
+  }
+
+  &.done {
+    background-color: #e7d4fa;
+
+    &:hover {
+      background-color: #e3c9fd;
+    }
+
+    .title {
+      opacity: 0.5;
+      text-decoration: line-through;
+    }
+  }
+
+  .title {
+    margin: 0;
+
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
