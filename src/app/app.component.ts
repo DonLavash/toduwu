@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { TitleAnimationComponent } from "./title-animation/title-animation.component";
+
+export interface ToDo {
+  title: string;
+  done: boolean;
+}
 
 @Component({
   selector: 'app-root',
