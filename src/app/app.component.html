@@ -1,6 +1,8 @@
 <app-title-animation></app-title-animation>
 
 <div class="app-container">
+  <app-create-todo (onCreateTodo)="addTodo($event)"></app-create-todo>
+
   <h2 class="section-title">ToDos</h2>
 
   <div class="card-container">

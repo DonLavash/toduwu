@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { TitleAnimationComponent } from './title-animation/title-animation.component';
 import { UwuCardComponent } from './uwu-card/uwu-card.component';
+import { CreateTodoComponent } from './create-todo/create-todo.component';
 
 export interface ToDo {
   title: string;
@@ -9,7 +10,7 @@ export interface ToDo {
 
 @Component({
   selector: 'app-root',
-  imports: [TitleAnimationComponent, UwuCardComponent],
+  imports: [TitleAnimationComponent, UwuCardComponent, CreateTodoComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
@@ -30,5 +31,9 @@ export class AppComponent {
     if (!todo) return;
 
     todo.done = !todo.done;
+  }
+
+  addTodo(todo: ToDo) {
+    this.todos.unshift(todo);
   }
 }
