@@ -1,0 +1,51 @@
+.todo-form {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  input {
+    flex-grow: 1;
+    height: 4rem;
+    border-radius: 8px;
+    padding: 0.5rem;
+
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+
+    background-color: #fefcde;
+    outline: 2px solid #fefcde;
+
+    transition: outline-color 0.2s linear;
+
+    &:hover {
+      outline-color: #f5f0bf;
+    }
+
+    &:focus {
+      outline-color: #ede8b0;
+    }
+  }
+
+  button {
+    width: 6rem;
+    border-radius: 8px;
+
+    font-family: 'Patrick Hand', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+
+    background-color: #c6f0a1;
+
+    transition: 0.1s linear;
+    transition-property: color, background-color;
+
+    &:hover {
+      background-color: #b7ef86;
+    }
+
+    &:disabled {
+      background-color: #d5f0be;
+    }
+  }
+}

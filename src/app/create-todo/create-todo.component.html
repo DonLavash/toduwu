@@ -1,0 +1,12 @@
+<form class="todo-form"  (ngSubmit)="onSubmit()">
+  <input
+    [(ngModel)]="todoTitle"
+    [ngModelOptions]="{ standalone: true }"
+  />
+  <button
+    type="submit"
+    [disabled]="!todoTitle"
+  >
+    To do
+  </button>
+</form>
