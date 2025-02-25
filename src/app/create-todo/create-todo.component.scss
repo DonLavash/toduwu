@@ -4,7 +4,8 @@
   gap: 0.5rem;
 
   input {
-    flex-grow: 1;
+    flex: 1 1 auto;
+    min-width: 15rem;
     height: 4rem;
     border-radius: 8px;
     padding: 0.5rem;
@@ -28,6 +29,7 @@
   }
 
   button {
+    flex-shrink: 0;
     width: 6rem;
     border-radius: 8px;
 
