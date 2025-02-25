@@ -17,6 +17,10 @@ export class AppComponent {
   todos: ToDo[] = [
     {
       title: 'Become UwU',
+      done: false,
+    },
+    {
+      title: 'Be Awesome',
       done: true,
     },
   ];
