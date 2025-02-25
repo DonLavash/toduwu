@@ -15,7 +15,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: npm run build -- --base-href=/toduwu/
 
       - name: Upload artifact
         id: deployment
